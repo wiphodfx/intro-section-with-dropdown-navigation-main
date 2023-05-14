@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- stylesheet Link 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="mainContent">
+      <nav>
+        <img src="./images/logo.svg" alt="logo" class="logo" />
+        <ul id="sidebar">
+          <li>
+            <a href="#"
+              >Features
+              <img src="./images/icon-arrow-down.svg" alt="" class="arrow-down"
+            /></a>
+            <div class="submenu">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span><img src="./images/icon-todo.svg" alt="" /></span
+                    >Todo List</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><img src="./images/icon-calendar.svg" alt="" /></span
+                    >Calendar</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span
+                      ><img src="./images/icon-reminders.svg" alt="" /></span
+                    >Reminders</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><img src="./images/icon-planning.svg" alt="" /></span
+                    >Planning</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+              >Company
+              <img src="./images/icon-arrow-down.svg" alt="" class="arrow-down"
+            /></a>
+            <div class="submenu">
+              <ul>
+                <li>
+                  <a href="#">History</a>
+                </li>
+                <li>
+                  <a href="#">Our Team</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#"> Careers</a></li>
+          <li><a href="#">About</a></li>
+          <img
+            src="./images/icon-close-menu.svg"
+            alt=""
+            class="menuIcon closeicon"
+            onclick="closeSidebar()"
+          />
+          <div class="botton-frame">
+            <a href="#" class="login-btn">Login</a>
+            <a href="#" class="register-btn">Register</a>
+          </div>
+        </ul>
+        <img
+          src="./images/icon-menu.svg"
+          alt=""
+          class="menuIcon"
+          onclick="openSideBar()"
+        />
+      </nav>
+      <section>
+        <div class="header-wrapper">
+          <div class="header-info">
+            <h1 class="header-text">Make remote work</h1>
+            <p class="header-msg">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button type="button" class="learnmore-btn">Learn more</button>
+            <div class="sponsors">
+              <img src="./images/client-databiz.svg" alt="supportimg" />
+              <img src="./images/client-audiophile.svg" alt="supportimg" />
+              <img src="./images/client-meet.svg" alt="supportimg" />
+              <img src="./images/client-maker.svg" alt="supportimg" />
+            </div>
+          </div>
+          <div class="header-image">
+            <picture>
+              <source
+                media="(min-width:650px)"
+                srcset="./images/image-hero-desktop.png"
+              />
+
+              <img
+                src="./images/image-hero-mobile.png"
+                alt="desktopimg"
+                style="width: 100%"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">IFIDI W. EPHOD</a>.
+        </div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
